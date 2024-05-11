@@ -9,3 +9,8 @@ function botonCambio(n){
     document.getElementById(n).style.height = "8px";
     document.getElementById(n+"-slide").style.visibility = "visible";
 }
+
+function aContacto(){
+    
+    location.href="#contacto"
+}
