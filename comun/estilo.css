@@ -63,6 +63,7 @@ body{
   background-color: buttonface;
   border-radius: 3px;
   padding: 5px;
+  display: inline-block;
 }
 .carta-button label:hover,
 .carta-button label:focus {
@@ -115,15 +116,7 @@ img {
   z-index: 100;
   transition: left 0.65s ease-out;
 }
-.slide-1 {
-  background-image: url("comun/Imagenes/_14408147-34c9-4a5b-abdf-329451b4f2cd.jpg");
-}
-.slide-2 {
-  background-image: url("comun/Imagenes/_da13aa21-8e61-4ede-95ba-bc5b74e0ce77.jpg");
-}
-.slide-3 {
-  background-image: url("comun/Imagenes/imagen1.jpg");
-}
+
 
 @media all and (max-width: 800px) {
     .navigation {
