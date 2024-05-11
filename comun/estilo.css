@@ -1,0 +1,184 @@
+body{
+    font-family: sans-serif;
+}
+
+/*NAVEGADOR*/
+.navigation {
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: flex-end;
+    
+    list-style: none;
+    margin: 0; 
+    background: white;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: black;
+  }
+  .navigation .logo {
+    flex: 50%;
+  }
+  
+  .navigation a:hover {
+    background: #fffff1;
+  }
+  
+.carta-contenedor {
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0px auto 8% auto;
+}
+
+.carta {
+    display: block;
+    padding: 1em;
+    align-self: center;
+}
+.carta button {
+    display: block;
+    background-color: black;
+    color: white;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    margin:0px auto;
+}
+.carta-contenedor-button {
+  display: flex;
+  flex-flow: row nowrap ;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0px auto 0% auto;
+}
+
+.carta-button label {
+  background-color: buttonface;
+  border-radius: 3px;
+  padding: 5px;
+}
+.carta-button label:hover,
+.carta-button label:focus {
+  background: grey;
+}
+.redes-sociales{    
+    display: inline;
+    margin: 0px 0px 0px 43%;
+}
+
+img {
+  max-width: 100%;
+}  
+.slider-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+.slide-1 {
+  background-image: url("comun/Imagenes/_14408147-34c9-4a5b-abdf-329451b4f2cd.jpg");
+}
+.slide-2 {
+  background-image: url("comun/Imagenes/_da13aa21-8e61-4ede-95ba-bc5b74e0ce77.jpg");
+}
+.slide-3 {
+  background-image: url("comun/Imagenes/imagen1.jpg");
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 720px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+
+    
+    .carta-contenedor {
+        flex-flow: column-reverse wrap;
+        padding: 0;
+        
+        width: 80%;
+        margin: auto;
+    }
+    
+.carta h1{
+    text-align: center;
+}
+.carta p{
+    text-align: center;
+}
+    .carta button {
+        display: block;
+        background-color: black;
+        color: white;
+        height: 50px;
+        border-radius: 3px;
+        border: none;
+        margin:0px auto;
+    }
+    .redes-sociales{    
+        display: inline;
+        margin: 0px 0px 0px 30%;
+    }
+    
+.slider-container {
+  height: 150%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+  }
